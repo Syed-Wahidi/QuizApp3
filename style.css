@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  background-image: url("imgs/sportsback.jpg");
+}
+
+h1, h2, h3 {
+  font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, ;
+}
+
+header .wrapper{
+  background: rgb(205, 255, 205);
+  text-align: center;
+  margin: auto;
+  border: 3px solid green;  
+ 
+} 
+
+span, p {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+.quizdiv {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  
+}
+
+.quizform {
+  background: white;
+  border-radius: 2px;
+  border: 1px solid #e3e3e3;
+  margin-top: 180px;
+  padding: 18px 32px;
+  width: 35%;
+  font-size: 30px;
+}
+
+fieldset {
+  border-width: 1px;
+  border-style: none;
+}
+
+input[type=radio]{
+  background: blue;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background: #55e79e;
+  color: white;
+  font-size: 40px;
+  padding: 15px;
+  width: 200px;
+  border-radius: 4px;
+}
+.wrapper{
+  width: 65%;
+}
+.group{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  flex: 1;
+  margin: 10px; 
+}
+
+/*desktop*/
+@media (min-width: 700px) {
+  .wrapper {
+    width: 75%;
+    margin: auto;
+  }
+
+  .group {
+		flex-direction: row;
+  }
+
+  header .wrapper {
+  	justify-content: space-between;
+  }
+
+
+  header {
+    margin-top: 14px; 
+  }
+
+  .quizdiv {
+		align-items: center;
+		display: flex;
+		height: 320px;
+		justify-content: center;
+		margin: 60px 0;
+		align-self: center;
+	}
+
+	.quizform {
+		background: white;
+		border-radius: 2px;
+		border: 1px solid #e3e3e3;
+		margin-top: 120px;
+		padding: 18px 32px;
+		width: 35%;
+	}
+}
