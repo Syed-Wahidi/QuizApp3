@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sports Quiz App</title>
+      <link rel="stylesheet" type= "text/css" href="style.css">
+</head>     
+
+<body>
+
+  
+  <header>
+ <div class="wrapper">
+  <div class='group '>
+     <div class="item">
+       <h1>Sports Quiz</h1>
+     </div>
+      <div class = "item">
+    <p>Question: <span class='js-question-counter'>0</span> / 5</p>
+    <p>Score: <span class="js-score-counter">0</span></p>
+      </div> 
+  </div>
+ </div>
+</header>
+
+<main role='main'>
+ 
+  <div class="quizdiv">
+    <div class="quizform js-intro">
+      <h2>This quiz will test you on your knowledge on sports.</h2>
+      <div class="controls">
+        <button class="button js-intro-submit">Start Quiz</button>
+      </div>
+    </div>
+    <div class="quizform js-question" aria-live="assertive"></div>
+    <div class="quizform js-feedback" aria-live="assertive"></div>
+    <div class="quizform js-evaluation" aria-live="assertive"></div>
+  </div>
+</main>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script  src="script.js"></script>
+</body>
+
+</html> 
